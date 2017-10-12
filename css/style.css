@@ -1,0 +1,325 @@
+/*Grands Ecrans*/
+
+html {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    background-color: #FFFFFF;
+}
+
+body {
+    padding: 0;
+    margin: 10px auto;
+    width: 1024px;
+    font-family: Arial, sans-serif;
+    color: #111111;
+    background-color: #708C78;
+    -webkit-box-shadow: 8px 8px 0px;
+    box-shadow: 8px 8px 20px;
+    border: 2px solid;
+}
+
+#main {
+    padding: 0;
+    margin: 0;
+}
+
+.photo {
+    color: #D9D9D9;
+    position: relative;
+    top: -200px;
+    left: 500px;
+    overflow: hidden;
+    border: 1px solid;
+    -webkit-border-radius: 375px;
+    border-radius: 375px;
+    width: 375px;
+    height: 375px;
+    -webkit-box-shadow: 8px 8px 20px;
+    box-shadow: 8px 8px 20px;
+}
+
+
+/*NavBar*/
+
+#navbar {
+    margin: auto auto;
+    background-color: #D9D9D9;
+    padding: 20px 0;
+}
+
+#navbar ul li {
+    display: inline;
+    text-align: center;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+#navbar ul {
+    margin: auto auto;
+}
+
+#navbar ul li a {
+    color: #111111;
+    text-decoration: none;
+    padding: 5px;
+    border-color: #D9D9D9;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#navbar ul li a:hover {
+    color: #111111;
+    border-color: #111111;
+}
+
+
+/*Header*/
+
+#header {
+    position: relative;
+    color: #D9D9D9;
+    padding: 10px 50px 10px 50px;
+}
+
+#header h1 {
+    position: relative;
+    top: 250px;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: left;
+    text-shadow: 3px 2px #111111;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+
+/*Content*/
+
+.div {
+    text-align: center;
+    background-color: #D9D9D9;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-top: 20px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.div:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin: auto auto;
+    padding: 25px 0 10px 0;
+}
+
+ul {
+    margin: 0;
+    text-align: left;
+    padding: 10px 0 5px 20px;
+}
+
+.hidden_div {
+    padding: 10px 80px;
+    text-align: justify;
+    background-color: #D9D9D9;
+}
+
+.hidden_div p {
+    margin: 0 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.hidden_div a {
+    color: #475240;
+}
+
+.hidden_div a:hover {
+    color: #475240;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icon {
+    width: 15%;
+    padding: 10px;
+    -webkit-animation-name: opacity;
+    -moz-animation-name: opacity;
+    -o-animation-name: opacity;
+    animation-name: opacity;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+
+/*Animation CSS*/
+
+@-webkit-keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slider {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.arrow {
+    width: 20%;
+    margin-bottom: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+#slider {
+    width: 50%;
+    border: 1px solid;
+    margin: 20px 0;
+}
+
+#socialnetwork {
+    margin: 0 0;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+/*Footer*/
+
+footer {
+    padding: 1px 0;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #D9D9D9;
+}
+
+footer a {
+    color: #475240;
+}
+
+footer a:hover {
+    color: #475240;
+}
+
+
+/*Petits Ecrans & Tablettes*/
+
+@media screen and (max-width: 1040px) {
+    body {
+        width: 768px;
+    }
+    .photo {
+        top: -150px;
+        left: 375px;
+        -webkit-border-radius: 275px;
+        border-radius: 275px;
+        width: 275px;
+        height: 275px;
+    }
+    #header h1 {
+        font-size: 40px;
+    }
+}
+
+
+/*Smartphones*/
+
+@media screen and (max-width: 770px) {
+    body {
+        margin: auto;
+        width: auto;
+        border: 0;
+    }
+    .photo {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        -webkit-border-radius: 250px;
+        border-radius: 250px;
+        width: 250px;
+        height: 250px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+	#navbar {
+		padding: 5px 0;
+	}
+    #navbar ul li {
+        display: none;
+    }
+    #header {
+        padding: 0 10px;
+    }
+    #header h1 {
+        position: static;
+        font-size: 30px;
+        text-shadow: 2px 1px #111111;
+    }
+    .div {
+        height: 60px;
+    }
+    h2 {
+        padding: 15px 0 10px 0;
+    }
+    .hidden_div {
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+	#icons {
+        margin: 15px auto;
+    }
+    .icon {
+        width: 20%;
+    }
+    #slider {
+        margin-bottom: 10px;
+    }
+    .arrow {
+        width: 20%;
+        margin-bottom: 30px;
+    }
+    footer {
+        font-size: 10px;
+    }
+}
